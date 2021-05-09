@@ -3,6 +3,7 @@
     package="kr.ac.konkuk.cse">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
         android:name="kr.ac.konkuk.cse"
@@ -11,15 +12,14 @@
         android:protectionLevel="dangerous" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Excersise3">
-        <activity android:name=".exam91.FragmentWrapperActivity">
-        </activity>
-        <activity android:name=".exam91.FragmentWrapperActivity2">
+        <activity android:name=".examm10.JsonParseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,10 +28,18 @@
                 <!-- <category android:name="android.intent.category.HOME" /> -->
             </intent-filter>
         </activity>
-        <activity android:name=".exam9.MySecondActivity" />
-        <activity android:name=".exam9.MyFragmentActivity">
+        <activity android:name=".examm10.XMLParseActivity">
         </activity>
-        <activity android:name=".exam7.PendingIntentActivity"></activity>
+        <activity android:name=".examm10.WebParseActivity">
+
+        </activity>
+        <activity android:name=".examm10.AsyncActivity" />
+        <activity android:name=".examm10.WebViewActivity" />
+        <activity android:name=".exam91.FragmentWrapperActivity" />
+        <activity android:name=".exam91.FragmentWrapperActivity2" />
+        <activity android:name=".exam9.MySecondActivity" />
+        <activity android:name=".exam9.MyFragmentActivity" />
+        <activity android:name=".exam7.PendingIntentActivity" />
         <activity android:name=".exam3.MainActivity" />
         <activity android:name=".exam3.ToggleActivity" />
         <activity android:name=".exam3.RadioActivity" />
