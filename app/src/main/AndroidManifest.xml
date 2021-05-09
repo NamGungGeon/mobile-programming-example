@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.ac.konkuk.cse">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="kr.ac.konkuk.cse"
+        android:description="@string/permdescription"
+        android:label="@string/app_name"
+        android:protectionLevel="dangerous" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Excersise3">
+        <activity android:name=".exam91.FragmentWrapperActivity">
+        </activity>
+        <activity android:name=".exam91.FragmentWrapperActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <category android:name="android.intent.category.HOME" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".exam9.MySecondActivity" />
+        <activity android:name=".exam9.MyFragmentActivity">
+        </activity>
+        <activity android:name=".exam7.PendingIntentActivity"></activity>
+        <activity android:name=".exam3.MainActivity" />
+        <activity android:name=".exam3.ToggleActivity" />
+        <activity android:name=".exam3.RadioActivity" />
+        <activity android:name=".exam3.AutoCompleteActivity" />
+        <activity android:name=".myjact.Exam1Activity" />
+        <activity android:name=".exam4.TextWatcherActivity" />
+        <activity android:name=".exam4.TextInputLayoutActivity" />
+        <activity android:name=".exam4.MediaPlayerActivity" />
+        <activity android:name=".exam4.LayoutActivity" />
+        <activity android:name=".exam5.MyRecyclerActivity" />
+        <activity android:name=".exam5.WordMasterActivity" />
+        <activity android:name=".exam6.MediaPlayerActivity" />
+        <activity android:name=".exam6.IntentActivity" />
+        <activity android:name=".exam6.IntroActivity" />
+        <activity android:name=".exam6.AddVocaActivity" />
+        <activity android:name=".exam6.WordMasterActivity" />
+        <activity android:name=".exam7.IntentFilterActivity" />
+        <activity
+            android:name=".exam7.SecondActivity"
+            android:permission="kr.ac.konkuk.cse">
+            <intent-filter>
+                <action android:name="kr.ac.konkuk.cse" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

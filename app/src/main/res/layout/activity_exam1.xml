@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myjact.Exam1Activity">
+    <EditText
+        android:hint="new todo body"
+        android:id="@+id/newTodoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="create"
+        android:id="@+id/newTodoCreateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="fragment 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <fragment
+                tools:layout="@layout/fragment_todo"
+                android:name="kr.ac.konkuk.cse.myjact.TodoFragment"
+                android:id="@+id/frag_todo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+            <TextView
+                android:text="fragment 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <fragment
+                tools:layout="@layout/fragment_todo"
+                android:name="kr.ac.konkuk.cse.myjact.TodoFragment"
+                android:id="@+id/frag_todo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
