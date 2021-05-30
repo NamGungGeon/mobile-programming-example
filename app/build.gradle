@@ -54,10 +54,14 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'androidx.wear:wear:1.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0' // 위치 서비스
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation 'com.github.NamGungGeon:jact:1.0.0'
+    compileOnly 'com.google.android.wearable:wearable:2.8.1'
 }
