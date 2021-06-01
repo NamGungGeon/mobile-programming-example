@@ -1,7 +1,7 @@
 package kr.ac.konkuk.cse.myjact;
 
 
-import com.github.geon.State;
+import geon.github.State;
 
 public class Todo extends State {
     public String body;

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "228786097023",
+    "firebase_url": "https://myfbdb-7fd1f-default-rtdb.firebaseio.com",
+    "project_id": "myfbdb-7fd1f",
+    "storage_bucket": "myfbdb-7fd1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228786097023:android:13fc0f8d7edc26a7cea84a",
+        "android_client_info": {
+          "package_name": "kr.ac.konkuk.cse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228786097023-e9gr35psjlfjibhhl4edd4umq6v5i0hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJREJawsvmYBnUY9VjPDijczmm7AQyXtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228786097023-e9gr35psjlfjibhhl4edd4umq6v5i0hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

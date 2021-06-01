@@ -20,6 +20,10 @@
         android:theme="@style/Theme.Excersise3"
         android:usesCleartextTraffic="true">
         <activity android:name=".examm11.ProductActivity">
+        </activity>
+        <activity android:name=".examm10.JsonParseActivity">
+        </activity>
+        <activity android:name=".examm12.ProductActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +31,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <!-- <category android:name="android.intent.category.HOME" /> -->
             </intent-filter>
-        </activity>
-        <activity android:name=".examm10.JsonParseActivity">
         </activity>
         <activity android:name=".examm10.XMLParseActivity"></activity>
         <activity android:name=".examm10.WebParseActivity"></activity>
