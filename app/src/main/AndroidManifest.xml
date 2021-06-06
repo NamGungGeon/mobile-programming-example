@@ -3,8 +3,10 @@
     package="kr.ac.konkuk.cse">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <permission
         android:name="kr.ac.konkuk.cse"
@@ -20,11 +22,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Excersise3"
         android:usesCleartextTraffic="true">
-        <activity android:name=".examm11.ProductActivity">
-        </activity>
-        <activity android:name=".examm10.JsonParseActivity">
-        </activity>
-        <activity android:name=".examm12.ProductActivity"/>
+        <receiver
+            android:name=".examm14.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <!-- 수신할 action 정보 -->
+            <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        </receiver>
+
+        <activity android:name=".examm14.BroadcastActivity" />
+        <activity android:name=".examm11.ProductActivity" />
+        <activity android:name=".examm10.JsonParseActivity" />
+        <activity android:name=".examm12.ProductActivity" />
         <activity
             android:name=".examm13.MapActivity"
             android:label="@string/title_activity_map">
